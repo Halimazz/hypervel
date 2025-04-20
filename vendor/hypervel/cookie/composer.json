@@ -1,0 +1,44 @@
+{
+    "name": "hypervel/cookie",
+    "type": "library",
+    "description": "The cookie package for Hypervel.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "cookie",
+        "swoole",
+        "hypervel"
+    ],
+    "authors": [
+        {
+            "name": "Albert Chen",
+            "email": "albert@hypervel.org"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/hypervel/components/issues",
+        "source": "https://github.com/hypervel/components"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypervel\\Cookie\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "hyperf/http-message": "~3.1.0",
+        "hyperf/context": "~3.1.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Hypervel\\Cookie\\ConfigProvider"
+        },
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    }
+}

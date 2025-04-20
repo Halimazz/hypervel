@@ -1,0 +1,82 @@
+{
+    "name": "hypervel/framework",
+    "type": "library",
+    "description": "The Hypervel framework.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "laravel",
+        "hyperf",
+        "hypervel",
+        "framework",
+        "swoole"
+    ],
+    "authors": [
+        {
+            "name": "Albert Chen",
+            "email": "albert@hypervel.org"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/hypervel/components/issues",
+        "source": "https://github.com/hypervel/components"
+    },
+    "require": {
+        "php": ">=8.2",
+        "ext-hash": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-json": "*",
+        "ext-pdo": "*",
+        "composer-runtime-api": "^2.2",
+        "hyperf/database-sqlite": "~3.1.0",
+        "hyperf/memory": "~3.1.0",
+        "hyperf/process": "~3.1.0",
+        "hyperf/signal": "~3.1.0",
+        "hyperf/translation": "~3.1.0",
+        "hyperf/validation": "~3.1.0",
+        "hyperf/view-engine": "~3.1.0",
+        "league/flysystem": "^3.25.1",
+        "hypervel/auth": "^0.1.5",
+        "hypervel/broadcasting": "^0.1.5",
+        "hypervel/bus": "^0.1.5",
+        "hypervel/cache": "^0.1.5",
+        "hypervel/config": "^0.1.5",
+        "hypervel/console": "^0.1.5",
+        "hypervel/container": "^0.1.5",
+        "hypervel/cookie": "^0.1.5",
+        "hypervel/core": "^0.1.5",
+        "hypervel/coroutine": "^0.1.5",
+        "hypervel/dispatcher": "^0.1.5",
+        "hypervel/encryption": "^0.1.5",
+        "hypervel/event": "^0.1.5",
+        "hypervel/filesystem": "^0.1.5",
+        "hypervel/foundation": "^0.1.5",
+        "hypervel/hashing": "^0.1.5",
+        "hypervel/http": "^0.1.5",
+        "hypervel/http-client": "^0.1.5",
+        "hypervel/jwt": "^0.1.5",
+        "hypervel/log": "^0.1.5",
+        "hypervel/mail": "^0.1.5",
+        "hypervel/notifications": "^0.1.5",
+        "hypervel/object-pool": "^0.1.5",
+        "hypervel/process": "^0.1.5",
+        "hypervel/prompts": "^0.1.5",
+        "hypervel/queue": "^0.1.5",
+        "hypervel/router": "^0.1.5",
+        "hypervel/session": "^0.1.5",
+        "hypervel/support": "^0.1.5",
+        "guzzlehttp/guzzle": "^7.8.2",
+        "nunomaduro/termwind": "^2.0",
+        "friendsofhyperf/command-signals": "~3.1.0"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    },
+    "minimum-stability": "dev"
+}

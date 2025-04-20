@@ -1,0 +1,49 @@
+{
+    "name": "hypervel/object-pool",
+    "description": "The object pool package for Hypervel.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "pool",
+        "object-pool",
+        "swoole",
+        "hypervel"
+    ],
+    "support": {
+        "issues": "https://github.com/hypervel/components/issues",
+        "source": "https://github.com/hypervel/components"
+    },
+    "authors": [
+        {
+            "name": "Albert Chen",
+            "email": "albert@hypervel.org"
+        }
+    ],
+    "require": {
+        "php": "^8.2",
+        "hyperf/coroutine": "~3.1.0",
+        "hyperf/engine": "^2.1",
+        "hyperf/coordinator": "~3.1.0",
+        "hyperf/contract": "~3.1.0",
+        "hyperf/support": "~3.1.0",
+        "nesbot/carbon": "^2.72.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypervel\\ObjectPool\\": "src/"
+        }
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Hypervel\\ObjectPool\\ConfigProvider"
+        },
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "minimum-stability": "dev"
+}

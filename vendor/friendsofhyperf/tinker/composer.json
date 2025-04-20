@@ -1,0 +1,56 @@
+{
+    "name": "friendsofhyperf/tinker",
+    "description": "The Powerful REPL for Hyperf.",
+    "license": "MIT",
+    "type": "library",
+    "keywords": [
+        "php",
+        "hyperf",
+        "tinker",
+        "swoole",
+        "v3.1"
+    ],
+    "authors": [
+        {
+            "name": "Huangdijia",
+            "email": "huangdijia@gmail.com",
+            "homepage": "https://github.com/huangdijia"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/friendsofhyperf/components/issues",
+        "source": "https://github.com/friendsofhyperf/components",
+        "docs": "https://hyperf.fans",
+        "pull-request": "https://github.com/friendsofhyperf/components/pulls"
+    },
+    "require": {
+        "hyperf/collection": "~3.1.0",
+        "hyperf/command": "~3.1.0",
+        "hyperf/contract": "~3.1.0",
+        "hyperf/di": "~3.1.0",
+        "hyperf/framework": "~3.1.0",
+        "hyperf/stringable": "~3.1.0",
+        "hyperf/support": "~3.1.0",
+        "hyperf/tappable": "~3.1.0",
+        "psy/psysh": "^0.10.0 || ^0.11.0 || ^0.12.0"
+    },
+    "suggest": {
+        "hyperf/view-engine": "Suggest for using `Hyperf\\ViewEngine\\HtmlString`."
+    },
+    "autoload": {
+        "psr-4": {
+            "FriendsOfHyperf\\Tinker\\": "src/"
+        }
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-main": "3.1-dev"
+        },
+        "hyperf": {
+            "config": "FriendsOfHyperf\\Tinker\\ConfigProvider"
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+    "name": "hypervel/session",
+    "type": "library",
+    "description": "The session package for Hypervel.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "session",
+        "swoole",
+        "hypervel"
+    ],
+    "authors": [
+        {
+            "name": "Albert Chen",
+            "email": "albert@hypervel.org"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/hypervel/components/issues",
+        "source": "https://github.com/hypervel/components"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypervel\\Session\\": "src/"
+        },
+        "files": [
+            "src/Functions.php"
+        ]
+    },
+    "require": {
+        "php": "^8.2",
+        "ext-session": "*",
+        "hyperf/context": "~3.1.0",
+        "hyperf/collection": "~3.1.0",
+        "hyperf/support": "~3.1.0",
+        "hyperf/stringable": "~3.1.0",
+        "hyperf/macroable": "~3.1.0",
+        "hyperf/tappable": "~3.1.0",
+        "hyperf/view-engine": "~3.1.0",
+        "hypervel/cache": "^0.1",
+        "hypervel/cookie": "^0.1",
+        "hypervel/support": "^0.1"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Hypervel\\Session\\ConfigProvider"
+        },
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    }
+}

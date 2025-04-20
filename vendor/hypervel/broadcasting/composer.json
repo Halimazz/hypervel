@@ -1,0 +1,60 @@
+{
+    "name": "hypervel/broadcasting",
+    "type": "library",
+    "description": "The filesystem package for Hyperf.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "swoole",
+        "broadcasting",
+        "hypervel"
+    ],
+    "authors": [
+        {
+            "name": "Albert Chen",
+            "email": "albert@hypervel.org"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/hypervel/components/issues",
+        "source": "https://github.com/hypervel/components"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypervel\\Broadcasting\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "hyperf/contract": "~3.1.0",
+        "hyperf/http-server": "~3.1.0",
+        "hyperf/pool": "~3.1.0",
+        "hyperf/redis": "~3.1.0",
+        "hypervel/auth": "^0.1",
+        "hypervel/bus": "^0.1",
+        "hypervel/cache": "^0.1",
+        "hypervel/foundation": "^0.1",
+        "hypervel/queue": "^0.1",
+        "hypervel/router": "^0.1",
+        "hypervel/support": "^0.1",
+        "hypervel/object-pool": "^0.1"
+    },
+    "suggest": {
+        "ext-hash": "Required to use the Ably and Pusher broadcast drivers.",
+        "ext-redis": "Required to use the Redis cache and queue drivers (^4.0|^5.0|^6.0).",
+        "ably/ably-php": "Required to use the Ably broadcast driver (^1.0).",
+        "pusher/pusher-php-server": "Required to use the Pusher broadcast driver (^6.0|^7.0)."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Hypervel\\Broadcasting\\ConfigProvider"
+        },
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    }
+}

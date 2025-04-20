@@ -1,0 +1,59 @@
+{
+    "name": "hypervel/notifications",
+    "type": "library",
+    "description": "The notifications package for Hypervel.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "notifications",
+        "swoole",
+        "hypervel"
+    ],
+    "authors": [
+        {
+            "name": "Albert Chen",
+            "email": "albert@hypervel.org"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/hypervel/components/issues",
+        "source": "https://github.com/hypervel/components"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypervel\\Notifications\\": "src/"
+        }
+    },
+    "require": {
+        "php": "^8.2",
+        "hyperf/config": "~3.1.0",
+        "hyperf/stringable": "~3.1.0",
+        "hyperf/contract": "~3.1.0",
+        "hyperf/collection": "~3.1.0",
+        "hyperf/context": "~3.1.0",
+        "hyperf/database": "~3.1.0",
+        "hyperf/di": "~3.1.0",
+        "hypervel/broadcasting": "^0.1",
+        "hypervel/support": "^0.1",
+        "hypervel/mail": "^0.1",
+        "hypervel/queue": "^0.1",
+        "hypervel/object-pool": "^0.1"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Hypervel\\Notifications\\ConfigProvider"
+        },
+        "hypervel": {
+            "providers": [
+                "Hypervel\\Notifications\\NotificationServiceProvider"
+            ]
+        },
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    }
+}

@@ -1,0 +1,63 @@
+{
+    "name": "hypervel/filesystem",
+    "type": "library",
+    "description": "The filesystem package for Hypervel.",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "hyperf",
+        "swoole",
+        "filesystem",
+        "hypervel"
+    ],
+    "authors": [
+        {
+            "name": "Albert Chen",
+            "email": "albert@hypervel.org"
+        }
+    ],
+    "support": {
+        "issues": "https://github.com/hypervel/components/issues",
+        "source": "https://github.com/hypervel/components"
+    },
+    "autoload": {
+        "psr-4": {
+            "Hypervel\\Filesystem\\": "src/"
+        },
+        "files": [
+            "src/Functions.php"
+        ]
+    },
+    "require": {
+        "php": "^8.2",
+        "hyperf/collection": "~3.1.0",
+        "hyperf/macroable": "~3.1.0",
+        "hyperf/support": "~3.1.0",
+        "hyperf/conditionable": "~3.1.0",
+        "hypervel/object-pool": "^0.1"
+    },
+    "suggest": {
+        "ext-fileinfo": "Required to use the Filesystem class.",
+        "ext-ftp": "Required to use the Flysystem FTP driver.",
+        "ext-hash": "Required to use the Filesystem class.",
+        "league/flysystem": "Required to use the Flysystem local driver (^3.0.16).",
+        "league/flysystem-path-prefixing": "Required to use the scoped driver (^3.3).",
+        "league/flysystem-read-only": "Required to use read-only disks (^3.3)",
+        "league/flysystem-aws-s3-v3": "Required to use the Flysystem S3 driver (^3.0).",
+        "league/flysystem-google-cloud-storage": "Required to use the Flysystem Google Cloud Storage driver (^3.0).",
+        "league/flysystem-ftp": "Required to use the Flysystem FTP driver (^3.0).",
+        "league/flysystem-sftp-v3": "Required to use the Flysystem SFTP driver (^3.0).",
+        "hypervel/http": "Required to allow Storage::put to accept a StreamInterface."
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "hyperf": {
+            "config": "Hypervel\\Filesystem\\ConfigProvider"
+        },
+        "branch-alias": {
+            "dev-main": "0.1-dev"
+        }
+    }
+}
